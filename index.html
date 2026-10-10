@@ -1,5 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -91,13 +92,14 @@ nav {
 }
 
 .nav-inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin-inline: auto;
   padding-inline: clamp(16px, 5vw, 60px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  min-height: 64px;
+  padding-block: 8px;
   gap: 24px;
 }
 
@@ -159,7 +161,7 @@ nav {
 
 /* ── Hero ─────────────────────────────────────────────────────────────────── */
 .hero {
-  max-width: 1200px;
+  max-width: 1600px;
   margin-inline: auto;
   padding-inline: clamp(16px, 5vw, 60px);
   padding-block: clamp(64px, 10vw, 120px) clamp(48px, 8vw, 96px);
@@ -311,7 +313,7 @@ nav {
 }
 
 .section-inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin-inline: auto;
   padding-inline: clamp(16px, 5vw, 60px);
 }
@@ -677,7 +679,7 @@ footer {
 }
 
 .footer-inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin-inline: auto;
   padding-inline: clamp(16px, 5vw, 60px);
 }
@@ -816,7 +818,7 @@ footer {
 <!-- ─── Navigation ─────────────────────────────────────────────────────────── -->
 <nav id="nav">
   <div class="nav-inner">
-    <a class="nav-logo" href="#"><span>UA</span> Arch</a>
+    <a class="nav-logo" href="#"><img src="assesst/logo.jpeg" alt="UA Arch" style="height:100px;width:auto;object-fit:contain;display:block;"></a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -856,9 +858,12 @@ footer {
       </div>
     </div>
 
-        <div class="hero-visual">
-      <img src="assesst/logo.jpeg" alt="UA Arch office" style="width:100%;height:100%;object-fit:cover;border-radius:2px;min-height:420px;display:block;">  
-    </div>
+    <figure style="margin:0;position:relative;">
+    <img src="assesst/ceo.jpg" alt="UA Arch office" style="width:100%;height:100%;object-fit:contain;border-radius:2px;min-height:620px;display:block;">
+    <figcaption style="text-align:center;padding:12px 0 0;font-size:0.875rem;color:#6B6459;letter-spacing:0.04em;">
+      CEO-Founder: Đậu Cường Pháp
+    </figcaption>
+  </figure>
 
   </div>
 </section>
