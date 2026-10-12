@@ -23,15 +23,16 @@
    Type:   Cormorant Garamond (display) / DM Sans (body/ui)
 ─────────────────────────────────────────────────────────────────────────── */
 :root {
-  --bg:        #f57575;
-  --bg-alt:    #da5656;
-  --fg:        #1A1A16;
-  --fg-muted:  #6B6459;
-  --accent:    #2E5446;
-  --accent-lt: #3D6B5A;
-  --brass:     #B8913A;
-  --rule:      rgba(26,26,22,0.15);
-  --nav-bg:    rgba(244,239,232,0.92);
+  --bg:        #9D6C3C;
+  --bg-alt:    #7A5230;
+  --fg:       #FFFFFF;
+  --fg-muted: #F5E6C8;
+  --accent:    #E8C07A;
+  --accent-lt: #F0D090;
+  --brass:     #F5DFA0;
+  --rule:      rgba(253,245,232,0.15);
+  --nav-bg: #2C1500;
+  --nav-fg-hover: #7A4A1E;
 
   --font-display: 'Cormorant Garamond', 'Be Vietnam Pro', Georgia, serif;
   --font-body:    'DM Sans', 'Be Vietnam Pro', system-ui, sans-serif;
@@ -130,27 +131,27 @@ nav {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--fg-muted);
+  color: var(--nav-fg);   /* ← dark brown, readable on cream */
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.nav-links a:hover { color: var(--accent); }
+.nav-links a:hover { color: var(--nav-fg-hover); }
 
 .nav-cta {
   font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--fg);
-  background: var(--accent);
-  color: #fff;
   padding: 8px 20px;
   text-decoration: none;
   transition: background 0.2s;
   white-space: nowrap;
+  background: #5C3418;
+  color: #F5DFA0;
+  border: 1px solid #9D6C3C;
 }
-.nav-cta:hover { background: var(--accent-lt); }
+.nav-cta:hover { background: #7A4A1E; color: #FFF8F0; }
 
 .nav-menu-btn {
   display: none;
@@ -837,11 +838,10 @@ footer {
     </button>
   </div>
   <div class="mobile-nav" id="mobileNav">
-    <a href="#services" onclick="toggleMenu()">Services</a>
-    <a href="#projects" onclick="toggleMenu()">Projects</a>
-    <a href="#about" onclick="toggleMenu()">About</a>
-    <a href="#contact" onclick="toggleMenu()">Contact</a>
-    <a href="#contact" onclick="toggleMenu()">Start a Project →</a>
+    <a href="#services" onclick="toggleMenu()">Dịch Vụ</a>
+    <a href="#projects" onclick="toggleMenu()">Dự Án</a>
+    <a href="#about" onclick="toggleMenu()">Thông Tin</a>
+    <a href="#contact" onclick="toggleMenu()">Liên Lạc</a>
   </div>
 </nav>
 
@@ -861,9 +861,7 @@ footer {
 
     <figure style="margin:0;position:relative;">
     <img src="assesst/ceo.jpg" alt="UA Arch office" style="width:100%;height:100%;object-fit:contain;border-radius:2px;min-height:620px;display:block;">
-    <figcaption style="text-align:center;padding:12px 0 0;font-size:0.875rem;color:#6B6459;letter-spacing:0.04em;">
-      CEO-Founder: Đậu Cường Pháp
-    </figcaption>
+  <span style="font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:#F5DFA0;border-left:2px solid #F5DFA0;padding-left:10px;">CEO &amp; Founder · Đậu Cường Pháp</span>
   </figure>
 
   </div>
